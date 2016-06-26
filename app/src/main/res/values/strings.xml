@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ListItem</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_list_item_style1">ListItemStyle1Activity</string>
+</resources>

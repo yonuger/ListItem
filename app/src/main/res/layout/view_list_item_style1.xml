@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.young.listitem.style1.ListItemStyle1View xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_margin="8dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/iv_list_item_style1_logo"
+            android:src="@mipmap/item01"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/ll_gray_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_centerVertical="true"
+                android:background="@color/gray"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/ll_gray_line">
+
+                <ImageView
+                    android:id="@+id/iv_list_item_style1_favorite"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    android:src="@mipmap/ic_favorite_unset"
+                    android:layout_alignParentRight="true"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_gray_line_02"
+                    android:orientation="horizontal"
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/iv_list_item_style1_favorite"
+                    android:background="@color/gray"/>
+
+                <TextView
+                    android:id="@+id/tv_list_item_style1_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/ll_gray_line_02"
+                    android:gravity="center_vertical"
+                    android:textSize="18sp"
+                    android:textColor="@color/black01"
+                    android:text="Old City Hotel"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ll_gray_line">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/ic_time"/>
+                    <TextView
+                        android:id="@+id/tv_list_item_style1_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:text="Today"
+                        android:textSize="12sp"
+                        android:gravity="center"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_list_item_style1_comment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/ic_comment"/>
+                    <TextView
+                        android:id="@+id/tv_list_item_style1_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:text="75views"
+                        android:textSize="12sp"
+                        android:gravity="center"/>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</com.young.listitem.style1.ListItemStyle1View>
